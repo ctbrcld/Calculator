@@ -4,70 +4,74 @@ using UnityEngine.UI;
 public class Calculator : MonoBehaviour
 
 {
-    public InputField InputField1;
-    public InputField InputField2;
-    public InputField ResultField;
-    private float Value1;
-    private float Value2;
-    private float Result;
+    [SerializeField] private InputField _inputField1;
+    [SerializeField] private InputField _inputField2;
+    [SerializeField] private InputField _resultField;
 
-    public void Add()
+    private float GetValue1()
     {
-        ResultField.text = (float.Parse(InputField1.text) + float.Parse(InputField2.text)).ToString();
+        return float.Parse(_inputField1.text);
+    }
+
+    private float GetValue2()
+    {
+        return float.Parse(_inputField2.text);
+    }
+
+    public void Addition()
+    {
+        _resultField.text = (GetValue1() + GetValue2()).ToString();
     }
     
-    public void Substract()
+    public void Substraction()
     {
-        ResultField.text = (float.Parse(InputField1.text) - float.Parse(InputField2.text)).ToString();
+        _resultField.text = (GetValue1() - GetValue2()).ToString();
     }
         
     public void Multiply()
     {
-        ResultField.text = (float.Parse(InputField1.text) * float.Parse(InputField2.text)).ToString();
+        _resultField.text = (GetValue1() * GetValue2()).ToString();
     }
     
     public void Divide()
     {
-        if (float.Parse(InputField2.text) == 0)
+        if (GetValue2() == 0)
         {
-            ResultField.text = "Error";
+            _resultField.text = "Error: Can't divide by 0";
         }
         else
         {
-            ResultField.text = (float.Parse(InputField1.text) / float.Parse(InputField2.text)).ToString();
+            _resultField.text = (GetValue1() / GetValue2()).ToString();
         }
     }  
     
-    public void Min()
+    public void FindMinimalValue()
     {
-        if (float.Parse(InputField1.text) < (float.Parse(InputField2.text)))
+        if (GetValue1() < GetValue2())
         {
-            ResultField.text = float.Parse(InputField1.text).ToString();
+            _resultField.text = GetValue2().ToString();
         }
-
         else
         {
-            ResultField.text = float.Parse(InputField2.text).ToString();
+            _resultField.text = GetValue2().ToString();
         }
     }
      
-    public void Max()
+    public void FindMaximumValue()
     {
-        if (float.Parse(InputField1.text) > (float.Parse(InputField2.text)))
+        if (GetValue1() > GetValue2())
         {
-            ResultField.text = float.Parse(InputField1.text).ToString();
+            _resultField.text = GetValue1().ToString();
         }
-
         else
         {
-            ResultField.text = float.Parse(InputField2.text).ToString();
+            _resultField.text = GetValue2().ToString();
         }
     }
-
-       
-    public void Exp()
+  
+    public void Power()
     {
-        ResultField.text = Mathf.Pow(float.Parse(InputField1.text), float.Parse(InputField2.text)).ToString();
+        _resultField.text = Mathf.Pow(GetValue1(), GetValue2()).ToString();
     }
 
 

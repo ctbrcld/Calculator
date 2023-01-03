@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 339609}
   - component: {fileID: 339611}
   - component: {fileID: 339610}
-  - component: {fileID: 339612}
   m_Layer: 5
   m_Name: CalculatorPanel
   m_TagString: Untagged
@@ -209,21 +208,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339608}
   m_CullTransparentMesh: 1
---- !u!114 &339612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 386a98c2848ad2c4d81361eeff56b9d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InputField1: {fileID: 837749485}
-  InputField2: {fileID: 1695534527}
-  ResultField: {fileID: 1592452333}
 --- !u!1 &104546018
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,7 +524,7 @@ GameObject:
   - component: {fileID: 399045157}
   - component: {fileID: 399045156}
   m_Layer: 5
-  m_Name: ButtonExp
+  m_Name: ButtonPower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -610,9 +594,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 339612}
+      - m_Target: {fileID: 1687636301}
         m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
-        m_MethodName: Exp
+        m_MethodName: Power
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -822,7 +806,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 339612}
+      - m_Target: {fileID: 1687636301}
         m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
         m_MethodName: Multiply
         m_Mode: 1
@@ -885,7 +869,7 @@ GameObject:
   - component: {fileID: 473204229}
   - component: {fileID: 473204228}
   m_Layer: 5
-  m_Name: ButtonMin
+  m_Name: ButtonFindMinimalValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -955,9 +939,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 339612}
+      - m_Target: {fileID: 1687636301}
         m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
-        m_MethodName: Min
+        m_MethodName: FindMinimalValue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1088,9 +1072,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 339612}
+      - m_Target: {fileID: 1687636301}
         m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
-        m_MethodName: Substract
+        m_MethodName: Substraction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1550,7 +1534,7 @@ GameObject:
   - component: {fileID: 837749486}
   - component: {fileID: 837749485}
   m_Layer: 5
-  m_Name: InputValue1
+  m_Name: InputField1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1772,7 +1756,7 @@ GameObject:
   - component: {fileID: 945265142}
   - component: {fileID: 945265141}
   m_Layer: 5
-  m_Name: ButtonAdd
+  m_Name: ButtonAddition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1842,9 +1826,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 339612}
+      - m_Target: {fileID: 1687636301}
         m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
-        m_MethodName: Add
+        m_MethodName: Addition
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1984,7 +1968,7 @@ GameObject:
   - component: {fileID: 1242194479}
   - component: {fileID: 1242194478}
   m_Layer: 5
-  m_Name: ButtonMax
+  m_Name: ButtonFindMaximalValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2054,9 +2038,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 339612}
+      - m_Target: {fileID: 1687636301}
         m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
-        m_MethodName: Max
+        m_MethodName: FindMaximumValue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2115,6 +2099,7 @@ GameObject:
   - component: {fileID: 1386860890}
   - component: {fileID: 1386860892}
   - component: {fileID: 1386860891}
+  - component: {fileID: 1386860893}
   m_Layer: 5
   m_Name: Placeholder
   m_TagString: Untagged
@@ -2183,6 +2168,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386860889}
   m_CullTransparentMesh: 1
+--- !u!114 &1386860893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386860889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 386a98c2848ad2c4d81361eeff56b9d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputField1: {fileID: 0}
+  _inputField2: {fileID: 0}
+  _resultField: {fileID: 0}
 --- !u!1 &1500583729
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,6 +2274,7 @@ GameObject:
   - component: {fileID: 1592452335}
   - component: {fileID: 1592452334}
   - component: {fileID: 1592452333}
+  - component: {fileID: 1592452336}
   m_Layer: 5
   m_Name: ResultField
   m_TagString: Untagged
@@ -2405,6 +2406,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592452331}
   m_CullTransparentMesh: 1
+--- !u!114 &1592452336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592452331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 386a98c2848ad2c4d81361eeff56b9d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputField1: {fileID: 0}
+  _inputField2: {fileID: 0}
+  _resultField: {fileID: 0}
 --- !u!1 &1687636296
 GameObject:
   m_ObjectHideFlags: 0
@@ -2417,6 +2433,7 @@ GameObject:
   - component: {fileID: 1687636299}
   - component: {fileID: 1687636298}
   - component: {fileID: 1687636297}
+  - component: {fileID: 1687636301}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2505,6 +2522,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1687636301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687636296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 386a98c2848ad2c4d81361eeff56b9d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputField1: {fileID: 837749485}
+  _inputField2: {fileID: 1695534527}
+  _resultField: {fileID: 1592452333}
 --- !u!1 &1695534525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2518,7 +2550,7 @@ GameObject:
   - component: {fileID: 1695534528}
   - component: {fileID: 1695534527}
   m_Layer: 5
-  m_Name: InputValue2
+  m_Name: InputField2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2810,7 +2842,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 339612}
+      - m_Target: {fileID: 1687636301}
         m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
         m_MethodName: Divide
         m_Mode: 1
