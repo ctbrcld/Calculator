@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 5132772988963534870}
   - component: {fileID: 5132772988963534865}
   - component: {fileID: 5132772988963534864}
-  - component: {fileID: 5132772988963534871}
+  - component: {fileID: 3263502337509373502}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -201,9 +201,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5132772988963534871}
+      - m_Target: {fileID: 11500000, guid: 790304a8bd032a5408804624c6f72c49, type: 3}
         m_TargetAssemblyTypeName: Button, Assembly-CSharp
-        m_MethodName: onTapped
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -213,7 +213,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5132772988963534871
+--- !u!114 &3263502337509373502
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -222,7 +222,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5132772988963534866}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b57f35d6d254a244eaae86daabdd19fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 790304a8bd032a5408804624c6f72c49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  label: {fileID: 5132772988181539089}
+  Numeric: 0
+  Calculator: {fileID: 0}
