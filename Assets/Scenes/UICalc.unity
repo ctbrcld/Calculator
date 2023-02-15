@@ -1247,6 +1247,18 @@ PrefabInstance:
       propertyPath: m_FontData.m_BestFit
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 255428499}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Log2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Calculator, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5132772988963534865, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Color.g
       value: 0.6039216
@@ -1894,6 +1906,18 @@ PrefabInstance:
       propertyPath: m_Text
       value: " \u03C0"
       objectReference: {fileID: 0}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 255428499}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pi
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Calculator, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5132772988963534865, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Color.g
       value: 0.6039216
@@ -2148,7 +2172,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5132772988181539089, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Text
-      value: cot
+      value: ctg
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 255428499}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Cotangent
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Calculator, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5132772988963534865, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Color.g
@@ -2262,7 +2298,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5132772988181539089, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Text
-      value: .
+      value: ','
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 255428499}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Comma
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Calculator, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5132772988963534865, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Color.b
@@ -2278,7 +2326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5132772988963534866, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Name
-      value: Button.
+      value: Comma
       objectReference: {fileID: 0}
     - target: {fileID: 5132772988963534867, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Pivot.x
@@ -2391,7 +2439,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5132772988181539089, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Text
-      value: '%'
+      value: prime
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 255428499}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Factorize
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Calculator, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5132772988963534865, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Color.g
@@ -2403,7 +2463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5132772988963534866, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Name
-      value: 'Percentage  '
+      value: Prime
       objectReference: {fileID: 0}
     - target: {fileID: 5132772988963534867, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Pivot.x
@@ -2595,6 +2655,18 @@ PrefabInstance:
       propertyPath: m_Text
       value: log10
       objectReference: {fileID: 0}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 255428499}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Log10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Calculator, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5132772988963534865, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Color.g
       value: 0.6039216
@@ -2709,7 +2781,7 @@ GameObject:
   - component: {fileID: 1105844729}
   - component: {fileID: 1105844730}
   m_Layer: 5
-  m_Name: min, max, pow, div
+  m_Name: Min, Max, Pow, Divide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3077,7 +3149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5132772988963534866, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Name
-      value: Button=
+      value: Equals
       objectReference: {fileID: 0}
     - target: {fileID: 5132772988963534867, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Pivot.x
@@ -3700,7 +3772,7 @@ GameObject:
   - component: {fileID: 1523085284}
   - component: {fileID: 1523085285}
   m_Layer: 5
-  m_Name: 7, 8, 9, x
+  m_Name: 7, 8, 9, Multiply
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5050,6 +5122,18 @@ PrefabInstance:
     - target: {fileID: 5132772988181539089, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Text
       value: sin
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 255428499}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Sinus
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132772988963534864, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Calculator, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5132772988963534865, guid: 5f3f480f35cdc3d4988a874b8da0e67a, type: 3}
       propertyPath: m_Color.g
