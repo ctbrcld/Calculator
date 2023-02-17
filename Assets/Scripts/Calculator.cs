@@ -4,15 +4,18 @@ using UnityEngine.UI;
 public partial class Calculator : MonoBehaviour
 
 {
+    private const string DefaultValue = "0";
+    private const string CommaValue = ",";
+
     [SerializeField] private Text _requestField;
     [SerializeField] private Text _resultField;
+
     private float _value1;
     private float _value2;
     private float _result;
-    private bool _clearField = true;
     private Operator _operator;
-    private const string DefaultValue = "0";
-    private const string CommaValue = ",";
+    private bool _clearField = true;
+
 
     public void AddDigit(int digit)
     {
@@ -21,6 +24,7 @@ public partial class Calculator : MonoBehaviour
             _resultField.text = digit.ToString();
             return;
         }
+
         if (_clearField)
         {
             _resultField.text = string.Empty;
@@ -197,6 +201,7 @@ public partial class Calculator : MonoBehaviour
                 n /= b;
                 c = (int)Mathf.Sqrt(n) + 1;
             }
+
             else
             {
                 b += 2;

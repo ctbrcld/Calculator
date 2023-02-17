@@ -1,7 +1,7 @@
 using UnityEngine;
 public class DigitButton : MonoBehaviour
 {
-    [SerializeField] private enum DigitType
+    private enum DigitType
     {
         Zero = 0,
         One = 1,
@@ -14,10 +14,11 @@ public class DigitButton : MonoBehaviour
         Eight = 8,
         Nine = 9
     }
-    [SerializeField] private DigitType digit;
-    [SerializeField] private Calculator Calculator;
+
+    [SerializeField] private DigitType _digit;
+    [SerializeField] private Calculator _calculator;
     public void Click()
     {
-        Calculator.AddDigit((int)digit);
+        _calculator.AddDigit((int)_digit);
     }
 }
